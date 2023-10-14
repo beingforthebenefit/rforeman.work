@@ -539,7 +539,7 @@ a.hoverline:hover {
 }
 
 small {
-  display: none;
+  font-size: 75%;
 }
 
 .grey-text {

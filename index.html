@@ -61,6 +61,43 @@
   <meta name="robots" content="index, follow" />
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+  <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    /* paste this line in verbatim */
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    /* customize formbutton below*/     
+    formbutton("create", {
+      action: "https://formspree.io/f/xjvqjepe",
+      title: "Questions for Renee?",
+      fields: [
+        { 
+          type: "email", 
+          label: "Email:", 
+          name: "email",
+          required: true,
+          placeholder: "your@email.com"
+        },
+        {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "What's on your mind?",
+        },
+        { type: "submit" }      
+      ],
+      styles: {
+        title: {
+          backgroundColor: "gray"
+        },
+        button: {
+          backgroundColor: "gray"
+        }
+      }
+    });
+  </script>
+
 </head>
 
 <body>
@@ -412,21 +449,36 @@
     </section>
 
 
-    <!-- Eighth Section: Contact -->
+    <!-- Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
-        <div class="contact-form-wrapper"
-          <form action="https://formspree.io/f/mzblyajn" method="post">
-              <label for="email">Your Email</label>
-              <input name="Email" id="email" type="email">
-              <label for="message">Your Message</label>
-              <input name="Email" id="message" type="text">
-              <button type="submit">Submit</button>
-          </form>
-        </div>
+          <p>
+              <a aria-label="Call Renee" data-position="top" data-tooltip="Call Renee" 
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                <i class="fa fa-phone"></i>
+              </a>
+              <a aria-label="Call Renee" href="tel:661-742-5222">661-742-5222</a>
+          </p>
+          <p>
+              <a aria-label="Email Renee" href="mailto:nila.r.foreman@gmail.com" target="_blank" data-position="top" 
+                data-tooltip="Email Renee" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a aria-label="Email Renee" href="mailto:nila.r.foreman@gmail.com" class="hoverline">
+                nila.r.foreman@gmail.com
+              </a>
+          </p>
+          <p>
+              <a aria-label="View Renee on LinkedIn" href="https://www.linkedin.com/in/renee-foreman-a36858261/" target="_blank" 
+                data-position="top" data-tooltip="View Renee on LinkedIn" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a aria-label="Renee on LinkedIn" href="https://www.linkedin.com/in/renee-foreman-a36858261/" class="hoverline" target="_blank">
+                linkedin.com/in/renee-foreman-a36858261/
+              </a>
+          </p>
       </div>
-       
     </section>
   </main>
 

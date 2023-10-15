@@ -692,3 +692,46 @@ small {
     background-position-x: 30%;
   }
 }
+
+.contact-form-wrapper {
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Spacing inside the wrapper */
+  margin: 20px 0; /* Spacing outside the wrapper */
+  max-width: 500px; /* Maximum width */
+  width: 100%; /* Full width up to the max-width */
+  margin-left: auto; /* Centering */
+  margin-right: auto; /* Centering */
+}
+
+.contact-form-wrapper label {
+  font-size: 1.2em; /* Larger font size */
+  color: #333; /* Dark grey text */
+  margin-bottom: 8px; /* Spacing below the label */
+  display: block; /* Block level element */
+}
+
+.contact-form-wrapper input {
+  width: calc(100% - 20px); /* Full width with padding accounted for */
+  padding: 10px; /* Internal spacing */
+  font-size: 1em; /* Standard font size */
+  border-radius: 4px; /* Slightly rounded corners */
+  border: 1px solid #ccc; /* Light grey border */
+  margin-bottom: 20px; /* Spacing below the input */
+}
+
+.contact-form-wrapper button {
+  background-color: #00897b; /* Teal background color to match your theme */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding around text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 1.2em; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.contact-form-wrapper button:hover {
+  background-color: #00695c; /* Darker teal on hover */
+}

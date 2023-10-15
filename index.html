@@ -511,7 +511,30 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
-  </script>  
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const formButtonContainer = document.querySelector('.formbutton-container');
+        const tooltip = document.createElement('div');
+        
+        tooltip.classList.add('tooltip');
+        tooltip.innerText = 'Your custom tooltip text';
+        
+        document.body.appendChild(tooltip);
+        
+        formButtonContainer.addEventListener('mouseenter', function() {
+            const rect = formButtonContainer.getBoundingClientRect();
+            tooltip.style.left = rect.left + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+            tooltip.classList.add('show');
+        });
+        
+        formButtonContainer.addEventListener('mouseleave', function() {
+            tooltip.classList.remove('show');
+        });
+    });
+  </script>
 </body>
 
 </html>
